@@ -14,7 +14,7 @@ Push Notification (APNs)
     },
     "category": "cate1",
     "sound": "default",
-    "badge": 1
+    "badge": 1,
   },
   "custom": {
     "key": "value",
@@ -38,4 +38,23 @@ AppDelegate.m
 
     completionHandler(UIBackgroundFetchResultNoData);
 }
+```
+
+### Log
+
+```
+2023-06-22 15:10:34.313718+0900 push[27843:1322549] Key:aps Value:{
+    alert =     {
+        body = "\U30a4\U30d9\U30f3\U30c8\U53d7\U4fe1";
+        subtitle = simurator;
+        title = "My Message";
+    };
+    badge = 1;
+    category = cate1;
+    sound = default;
+}
+2023-06-22 15:10:34.313942+0900 push[27843:1322549] Key:custom Value:{
+    key = value;
+}
+2023-06-22 15:10:34.314099+0900 push[27843:1322549] Key:Simulator Target Bundle Value:tucur.prg.push
 ```
